@@ -6,3 +6,11 @@
   width: 80vw;
   height: 60vh;
 }
+
+/*I took this code from http://stackoverflow.com/questions/3975769/disable-webkits-spin-buttons-on-input-type-number to remove the spinners on the number box*/
+ 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

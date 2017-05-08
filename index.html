@@ -10,7 +10,23 @@
     <h1>Hey Family!</h1><h1> Please come visit me soon</h1>
     <h2>Here are some of my favorite places to visit in Seattle</h2>
     <h3>I miss you bunches!</h3>
-    <form name="myCoords"></form>
+    <form name="myCoords">
+      <select name="favPlaces" id="favPlaces">
+        <option disabled selected>Pick a Place!</option>
+        <option name="opCal" id="opCal">Cal Anderson Park</option>
+        <option name="opUwa" id="opUwa">Uwajimaya</option>
+        <option name="opNyx" id="opNyx">NYX</option>
+        <option name="opUwe" id="opUwe">UW Extension</option>
+        <option name="opCon" id="opCon">Convention Center</option>
+        <option name="opKob" id="opKob">Kobe Terrace</option>
+      </select>
+      
+      <div class=coordinates>
+        <p>Latitude</p><input type="number" step="any">
+        <p>Longitude</p><input type="number" step="any">
+        <p>Zoom</p><input type="number" step=2 min="0" max="30">
+      </div>
+    </form>
     <div id="map">test</div>
     
     <script src="script.js"></script>
