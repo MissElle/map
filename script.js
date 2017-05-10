@@ -44,8 +44,8 @@ function initMap() {
     mapLat = 47.6002647;
     mapLng = -122.3264266;
   }else {
-    mapLat = parseFloat(document.getElementById('myLat').value);
-    mapLng = parseFloat(document.getElementById('myLng').value);
+      mapLat = position.coords.latitude;
+      mapLng = position.coords.longitude;
   }
  
 //Map is generated with the code below
