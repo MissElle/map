@@ -8,14 +8,14 @@ var geoOptions = {
   timeout           : 27000
 };
 
-//var mapCenter = document.getElementById('myLat').value, document.getElementById('myLng').value;
-
+var mapLat = document.getElementById('myLat').value;
+var mapLng = document.getElementById('myLng').value;
 var mapZoom = document.getElementById('myZoom').value;
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 47.618107, lng:-122.319391},
-    zoom: 16
+    center: {lat: mapLat, lng: mapLng},
+    zoom: myZoom
     });
   console.log("map is being read");
 }
