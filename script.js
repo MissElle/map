@@ -1,7 +1,7 @@
 // script.js - script for map project
 
 //------------------------------------------------------------------------------------//
-
+//Event Listener to update form with any changes to the fields
 //var geoOptions = {
 //  enableHighAccuracy: true, 
 //  maximumAge        : 30000, 
@@ -10,12 +10,8 @@
 
 document.getElementById('myCoords').addEventListener("change", initMap);
 
-//function selSelect() {
-//  var opt
-//  for (var i = 0; i<selForm.options.length; i++) {
-//    
-//  }
-//}
+//------------------------------------------------------------------------------------//
+//Function for generating map below
 
 function initMap() {
   var selForm = document.getElementById('favPlaces');
@@ -23,8 +19,13 @@ function initMap() {
   var mapLat = parseFloat(document.getElementById('myLat').value);
   var mapLng = parseFloat(document.getElementById('myLng').value);
   var mapZoom = parseFloat(document.getElementById('myZoom').value);
+
+//These if/else statements determine coordinates depending which option is selected
   
-  if(selOptions === "Cal Anderson Park"){
+  if(selOptions === "Enter Coordinates, or..."){
+    mapLat = parseFloat(document.getElementById('myLat').value);
+    mapLng = parseFloat(document.getElementById('myLng').value);    
+  }else if(selOptions === "Cal Anderson Park"){
     mapLat = 47.618107;
     mapLng = -122.319391;
   }else if(selOptions === "Uwajimaya"){
@@ -46,6 +47,8 @@ function initMap() {
     mapLat = parseFloat(document.getElementById('myLat').value);
     mapLng = parseFloat(document.getElementById('myLng').value);
   }
+ 
+//Map is generated with the code below
   
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: mapLat, lng: mapLng},
