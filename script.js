@@ -27,7 +27,7 @@ function initMap() {
   if(selOptions === "Enter Coordinates"){
     mapLat = parseFloat(document.getElementById('myLat').value);
     mapLng = parseFloat(document.getElementById('myLng').value);
-    infoWindow.setContent('Here are your Custom Coordinates');
+    locName = "Custom Coordinates";
 
   }else if(selOptions === "Cal Anderson Park"){
     mapLat = 47.618107;
