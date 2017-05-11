@@ -6,8 +6,8 @@
 html {
   background-image: url(images/space-needle.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 200%;
+  background-position: top center;
+  background-size: 170%;
   overflow-x:hidden;
   overflow-y:scroll;
 }
@@ -82,20 +82,30 @@ img {
 .coordinates {
   display: flex;
   flex-flow: row wrap;
-  width: 30em;
+  width: 35em;
 }
 
-input:not(:last-child) {
+.input-element {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15em;
+}
+
+.input-element:last-child {
+  width: 6em;
+}
+
+input {
   font-size: 1.3em;
   height: 1.3em;
-  width: 6em;
+  min-width: 69%;
   margin: .5em 0 0 0;
 }
 
 input:last-child {
   font-size: 1.3em;
   height: 1.3em;
-  width: 2em;
+  min-width: 1%;
   margin: .5em 0 0 0;
 }
 
@@ -135,20 +145,22 @@ p {
 
 @media all and (max-width: 69em){
 	#map{width: 64%;}
+    html{background-size: 220%;}
 }
 
 @media all and (max-width: 57.7em){
 	.coordinates{width: 63%;}
 	header{max-height: 10em;}
 	.heading{width:27em; padding: 0 0 0 2em;}
+    html{background-size: 240%;}
 }
 
 @media all and (max-width: 51em){
-	.coordinates{width: 39%;}	
-		html{background-size: cover; background-position: top center;}
+    .coordinates{width: 39%;}
+    html{background-size: 260%; background-position: top center;}
 }
 
-@media all and (max-width: 43.7em){
+@media all and (max-width: 45em){
 	.wrapper{text-align: center;}
 	header{
 	  flex-flow: column wrap;
@@ -162,6 +174,7 @@ p {
 	.coordinates{width: 100%; justify-content: center;}
 	#map{width: 100%;}
 	img{width: 10em; height: 10em; margin:0; padding: 0;}
+    html{background-size: auto 100%;}
 }
 
 @media all and (max-width: 29.4em){
