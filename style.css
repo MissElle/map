@@ -56,9 +56,10 @@ header {
   font-weight: bold;
 }
 
-.movie {
+#movie {
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: center;
   height: 37em;
   width: 22em;
