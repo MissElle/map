@@ -46,18 +46,18 @@ function initMap() {
     locName= "Washington State<br>Convention Center";
     vidSrc.innerHTML = '<video controls><source src="videos/3-con.mp4"></video>';
   }else if(selOptions === "UW Extension"){
-    mapLat = 47.608419;
-    mapLng = -122.320976;
+    mapLat = 47.608813;
+    mapLng = -122.335690;
     locName= "UW Extension<br>Continuing Education";
     vidSrc.innerHTML = '<video controls><source src="videos/4-uwex.mp4"></video>';
   }else if(selOptions === "Seattle Public Library") {
-    mapLat = 47.6002647;
-    mapLng = -122.3264266;
+    mapLat = 47.606473;
+    mapLng = -122.332990;
     locName= "Seattle Public<br>Library";
     vidSrc.innerHTML = '<video controls><source src="videos/5-lib.mp4"></video>';
   }else if(selOptions === "Kobe Terrace"){
-    mapLat = 47.606473;
-    mapLng = -122.332990;
+    mapLat = 47.601000;
+    mapLng = -122.324950;
     locName= "Kobe Terrace";
     vidSrc.innerHTML = '<video controls><source src="videos/6-kobe.mp4"></video>';
   }else if(selOptions === "Uwajimaya"){
